@@ -1,0 +1,88 @@
+<h1 id="cp411-project-interactive-3d-solar-system-simulation">CP411 Project: Interactive 3D Solar System Simulation</h1>
+<p><strong>Authors and Student ID</strong>: - Dylan Atkinson - Basleal ABshiro - Omar Abdeen</p>
+<p><strong>Date</strong>: 2024-11-23</p>
+<h2 id="introduction">Introduction</h2>
+<p>The proposed project is an Interactive 3D Solar System Simulation that will visualize the movement of planets around the sun. The system will allow users to view the solar system from different perspectives, toggle the planetary orbits, and adjust the simulation speed. The project provides a way to explore planetary motion and showcases the creative implementation of OpenGL features.</p>
+<p>The primary goal of this project is to simulate the orbital mechanics of planets using circular motion algorithms, display realistic 3D models of celestial bodies, and enable interactivity. This project is manageable within the timeframe and uses knowledge of the previously developed tools (SimpleView) as the baseline system.</p>
+<h2 id="problem-solving-and-algorithms">Problem Solving and Algorithms</h2>
+<p>The main computational challenges include:</p>
+<ol class="incremental" type="1">
+<li><strong>Orbital Mechanics</strong>: Simulating a circular or elliptical motion using parametric equations.
+<ul class="incremental">
+<li>Position (x, y, z):</li>
+<li>x = r · cos(θ), y = 0, z = r · sin(θ)</li>
+<li>where r is the orbital radius, and θ increases over time to simulate movement.</li>
+</ul></li>
+<li><p><strong>Lighting and Texture Mapping</strong>: Creating a realistic rendering of planets with OpenGL’s lighting models and texture mapping for surfaces.</p></li>
+<li><p><strong>Interactivity</strong>: Implementing user input to adjust the simulation speed and toggle orbits using OpenGL callbacks for mouse and keyboard events.</p></li>
+</ol>
+<h2 id="design-consideration">Design Consideration</h2>
+<p>The system will follow the Model-View-Controller (MVC) architecture:</p>
+<ul class="incremental">
+<li><strong>Model</strong>: Represents the planetary data (size, orbit radius, textures).</li>
+<li><strong>View</strong>: Handles rendering using OpenGL’s 3D graphics pipeline.</li>
+<li><strong>Controller</strong>: Manages user input to control the simulation.</li>
+</ul>
+<p>Key design features include:</p>
+<ul class="incremental">
+<li><strong>Dynamic Camera</strong>: A movable camera to allow different perspectives of the solar system.</li>
+<li><strong>Planetary Textures</strong>: Adding realistic textures for each planet using OpenGL texture mapping.</li>
+<li><strong>Toggle Features</strong>: Orbit paths and speed adjustments for user interactivity.</li>
+</ul>
+<h2 id="milestones-schedule">Milestones &amp; Schedule</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Task ID</th>
+<th>Description</th>
+<th>Due Date</th>
+<th>Lead</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Research &amp; team formation</td>
+<td>Day 7 of week 10</td>
+<td>Dylan</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Proposal submission</td>
+<td>Day 6 of week 11</td>
+<td>Dylan</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Basic system setup (planet models, orbit logic)</td>
+<td>Day 7 of week 11</td>
+<td>Dylan</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Interactive features (camera, user inputs)</td>
+<td>Day 3 of week 12</td>
+<td>Dylan</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Testing and debugging</td>
+<td>Day 5 of week 12</td>
+<td>Dylan</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Final demonstration and submission</td>
+<td>Day 7 of week 12</td>
+<td>Dylan</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<ol class="incremental" type="1">
+<li>OpenGL Code from lectures given throughout the CP411 course.</li>
+<li>Solar System Simulation Example: <a href="https://www.geeksforgeeks.org/c-program-to-draw-a-solar-system-using-computer-graphics/" class="uri">https://www.geeksforgeeks.org/c-program-to-draw-a-solar-system-using-computer-graphics/</a></li>
+<li>SimpleView Framework Documentation from CP411 Assignments.</li>
+</ol>
+<hr />
+<p>This proposal aims to balance simplicity with creativity. This will ensure that the project is both feasible and aligns with our course requirements and expectations. The interactive solar system leverages OpenGL features, applies learned techniques, texture mapping, and explores new elements such as dynamic user interactivity.</p>

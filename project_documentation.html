@@ -1,0 +1,62 @@
+<h1 id="solar-system-simulation-project-documentation">Solar System Simulation Project Documentation</h1>
+<p><strong>Authors and Student ID</strong>: - Dylan Atkinson - Basleal ABshiro - Omar Abdeen</p>
+<h2 id="technical-documentation">Technical Documentation</h2>
+<h3 id="system-architecture">System Architecture</h3>
+<p>The project follows MVC (Model-View-Controller) architecture: - <strong>Model</strong>: Solar.cpp/hpp - Handles planetary data and physics - <strong>View</strong>: Sphere.cpp/hpp - Manages rendering and display - <strong>Controller</strong>: Menu.cpp/hpp - Processes user input</p>
+<h3 id="class-structure">Class Structure</h3>
+<ol class="incremental" type="1">
+<li><strong>Solar Class</strong>
+<ul class="incremental">
+<li>Manages celestial bodies and their relationships</li>
+<li>Handles orbital calculations</li>
+<li>Updates positions</li>
+</ul></li>
+<li><strong>Sphere Class</strong>
+<ul class="incremental">
+<li>Renders 3D spheres</li>
+<li>Manages textures</li>
+<li>Handles lighting and materials</li>
+</ul></li>
+<li><strong>Camera Class</strong>
+<ul class="incremental">
+<li>Controls view perspective</li>
+<li>Manages camera movement</li>
+<li>Handles zoom and rotation</li>
+</ul></li>
+<li><strong>Light Class</strong>
+<ul class="incremental">
+<li>Controls lighting conditions</li>
+<li>Manages light position</li>
+<li>Sets lighting parameters</li>
+</ul></li>
+</ol>
+<h3 id="setup-instructions">Setup Instructions</h3>
+<ol class="incremental" type="1">
+<li><p>Install prerequisites:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="ex">-</span> Install MinGW</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="ex">-</span> Set up OpenGL libraries</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="ex">-</span> Install FreeGLUT</a></code></pre></div></li>
+<li><p>Project setup:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="ex">-</span> Clone repository</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="ex">-</span> Create <span class="st">&#39;textures&#39;</span> folder</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="ex">-</span> Add texture files (sun.bmp, earth.bmp, moon.bmp)</a></code></pre></div></li>
+</ol>
+<h2 id="user-guide">2. User Guide</h2>
+<h3 id="controls">Controls</h3>
+<ul class="incremental">
+<li><strong>Mouse Controls</strong>:
+<ul class="incremental">
+<li>Left click + drag: Rotate camera</li>
+<li>Right click: Menu options</li>
+<li>Scroll: Zoom in/out</li>
+</ul></li>
+<li><strong>Keyboard Controls</strong>:
+<ul class="incremental">
+<li>W/S: Camera up/down</li>
+<li>A/D: Camera left/right</li>
+<li>Q/E: Zoom in/out</li>
+<li>R: Reset camera</li>
+<li>O: Toggle orbit paths</li>
+<li>+/-: Adjust simulation speed</li>
+</ul></li>
+</ul>
